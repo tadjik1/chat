@@ -8,7 +8,7 @@ export default registerAs('database', () => {
 
   return {
     type: 'sqlite',
-    database: 'data/db.sqlite',
+    database: '/data/db.sqlite',
     synchronize: nodeEnv !== 'production',
     autoLoadEntities: true,
   } as TypeOrmModuleOptions;
