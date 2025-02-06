@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     return;
   }
 
-  const socket = io('http://localhost:3000', {
+  const socket = io({
     auth: { token },
   });
 
